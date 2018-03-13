@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.asadfiaz.movieapp.Login">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/movie_box"
+        app:civ_border_color="#FF61A0E6"
+        app:civ_border_width="4dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#716F74">
+            app:errorTextAppearance="@style/error_appearance">
+
+            <EditText
+                android:id="@+id/txtUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#716F74"
+                android:hint="Email"
+                android:textColor="#fff"
+                android:textColorHint="#716F74"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#716F74">
+            app:errorTextAppearance="@style/error_appearance"
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#716F74"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#fff"
+                android:textColorHint="#716F74"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/more"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="0.26"
+                android:background="@drawable/rounded_button_blue"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </com.andexert.library.RippleView>
+
+
+        <com.andexert.library.RippleView
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSignUpNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="0.26"
+                android:background="@drawable/rounded_button"
+                android:text="NO account yet? Signup now"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+        </com.andexert.library.RippleView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

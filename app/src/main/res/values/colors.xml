@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424045</color>
+    <color name="colorPrimaryDark">#454348</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textColorPrimary">#fff</color>
+    <color name="error_color">#00C853</color>
+    <color name="error_color2">#06f6f6</color>
+    <color name="control_activated">#0690f0</color>
+    <color name="control_normal">#646161</color>
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+    <color name="colorProgressView">#f46b45</color>
+</resources>

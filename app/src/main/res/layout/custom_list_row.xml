@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:elevation="10dp"
+    android:padding="4dp">
+
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:background="@drawable/border_image"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_menu_gallery" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:text="Title"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/director"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:text="Director"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/director"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/poster"
+
+        android:layout_toRightOf="@+id/poster"
+        android:text="Genre"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/metaScore"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/genre"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:text="Meta Score"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/imbdRating"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/metaScore"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/poster"
+
+        android:layout_toRightOf="@+id/poster"
+        android:text="Rating "
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imbdRating"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:text="year "
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <com.like.LikeButton
+        android:id="@+id/btnLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="110dp"
+        app:icon_size="25dp"
+        app:icon_type="heart" />
+
+
+</RelativeLayout>

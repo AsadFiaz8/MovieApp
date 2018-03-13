@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    android:background="@color/colorPrimaryDark"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/border_image"
+        android:src="@drawable/ic_menu_gallery" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="297dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:text="Title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/director"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:text="Director"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="297dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/director"
+        android:layout_marginLeft="5dp"
+
+        android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:text="Genre"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/metaScore"
+        android:layout_width="297dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/genre"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:text="Meta Score"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/imbdRating"
+        android:layout_width="297dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/metaScore"
+        android:layout_marginLeft="5dp"
+
+        android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:text="Rating "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/year"
+        android:textColor="#fff"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imbdRating"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:text="year "
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Liked"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:background="@color/control_activated"
+        android:layout_below="@+id/poster"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
